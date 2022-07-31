@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COMING SOON</title>
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://lh3.googleusercontent.com/MOZNA7E40uuV91Mv14BaQ6rt39Gqu2DU_FoChfLQNUegA8tXq16qpKs9uEUdrD8-QQCpRAjy1-08uUcXbLthY14wlVcXggy_g4cwWqjDNrZWnZPTmllCWFlueRmWTuV3f2wYwGRnzK9ZLL0opXmAjgqQt_rGTrkKR6dPlLc4sB9jB8SApQGkqXEPZk3CuLoVyb3mliRlF8-dDThf6tDe_qwFt_CcMPqLun7TomCJ2DrrjyJiV5JLwJoWHZB7pQcISEo-0fHd-k2-hK0xzf8B8g_UbXHs3A49iykJKT4EM1ogSPSPE_MQcAiWAdB3R0B6kNRdyhHbMrh3BzTI1ZhpX0OaMh9G5xkXUxvdiB6Brves6mE9ZfpA1FwbWK1LQd__TqJoZGKQ0u5C-bc3LLP7v9jZxxdLKw0axZ34PJLpmJg7XJwqOhPuHza0iuLzj5XQ55WsLqFgYuyzQ1271VRm9Dly50XPhqukFfmpY93JglDrJcKuGIiRvwauLbnOY1rNsq81SGesg82oH8_ag5uJKcUzkpbbiLFQedvElD9eIvsxKjvo-i4wKoK3p-il3UAaiG6nEsFV4El3etrGsxkSrMc_u8PGaxt3y6cy3F5iuUa3I27N6QwdIlo5rc8w3O7Zxdk_dpoJChPx6wijajOkzdpSGa3sTUuUppniXEvzfoKRp-dqVdntmtOQY75_wCEVQv6QCuOUjC9tBhmF4NauDDk26UINmR8JFA2sgeX-zp0hWNaVpPArsSI72UJDRLYpshYTutX8zFW2D6lIlxmihHK3kwDuICDA3Q=w1659-h933-no?authuser=0');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  color: black;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>fanatik_1142</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo"></p>
+  </div>
+  <div class="bottomleft">
+    <p>awokawokawok Nunggu</p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2023 0:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Dh Lewat Anj";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
